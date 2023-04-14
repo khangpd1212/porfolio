@@ -1,0 +1,35 @@
+/* title user */
+@keyframes move_left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes move_right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.title__user {
+  width: clamp(20em, 100%, 38.9375em);
+  margin: 0 auto;
+  margin-bottom: 4.375em;
+}
+.title__user > .title__user--username {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  animation: move_left 1s ease-out alternate 1;
+}
+.title__user > .title__user--role {
+  font-size: 32px;
+  line-height: 48px;
+  text-align: right;
+  color: #95dedb;
+  animation: move_right 1s ease-out alternate 1;
+}

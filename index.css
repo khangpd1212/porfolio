@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
+@import url("title-user/index.css");
+@import url("about-me/index.css");
+@import url("skills/index.css");
+@import url("project/index.css");
+@import url("contact/index.css");
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: black;
+  background-color: #232323;
   color: #fcfcfc;
 }
 h3 {
@@ -13,6 +20,7 @@ h3 {
 .icon-center {
   vertical-align: middle;
   margin-right: 10px;
+  font-size: 14px;
 }
 .container-section {
   padding: 0px 8.75em;
@@ -22,13 +30,46 @@ h3 {
     padding: 0px;
   }
 }
-
+#header {
+  padding: 1.5em;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #232323;
+  transition: all 0.3s;
+}
 .heading {
   color: #95dedb;
   font-size: 24px;
   font-weight: 600;
-  margin: 1.25em 0px;
+  margin: 4.25em 0px 1.25em 0px;
 }
 .mb-10 {
   margin-bottom: 10px;
+}
+
+/* tab */
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 0.83em;
+}
+.btn-primary {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fcfcfc;
+  justify-content: center;
+  padding: 1em 1.3em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fcfcfc;
+  transition: color 0.4s ease-out;
+  background-color: transparent;
+}
+.btn-primary:hover,
+.btn-primary:target {
+  color: black;
+  background-color: #95dedb;
 }
