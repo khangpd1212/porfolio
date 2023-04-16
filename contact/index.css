@@ -5,6 +5,12 @@
   display: flex;
   gap: 2.5em;
 }
+#contact .container-contact > .contact-form{
+  flex: 1;
+}
+#contact .container-contact > .information{
+  flex: 1;
+}
 #contact h3 {
   margin-bottom: 0.625em;
 }
