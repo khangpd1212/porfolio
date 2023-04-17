@@ -57,7 +57,7 @@
   font-weight: 500;
   display: inline;
 }
-.container-contact .container-icon-profile > .icon-github {
+.container-contact .container-icon-profile .icon-github {
   margin-right: 0.625em;
 }
 .container-contact .copy-right {
@@ -74,5 +74,16 @@
     display: flex;
     flex-direction: column;
     gap: 0;
+  }
+  .container-contact .container-icon-profile .icon-github {
+    margin-right: 0;
+  }
+  #contact .container-icon-profile {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+  }
+  #contact .copy-right {
+    margin-top: 0;
   }
 }
