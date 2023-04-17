@@ -1,4 +1,7 @@
 /* project */
+.swiper {
+  z-index: 4;
+}
 .swiper-pagination {
   border-radius: 100px;
   background: rgba(252, 252, 252, 0.2);
@@ -109,7 +112,32 @@
     height: 18em;
   }
 }
-
+@media screen and (max-width: 600px) {
+  #project .project-image {
+    height: 14em;
+  }
+}
+@media screen and (max-width: 480px) {
+  #project .container-project {
+    padding: 0 2em;
+  }
+  #project .project-image {
+    height: 10em;
+  }
+  #project .project-right > .container-skill-project {
+    grid-template-columns: repeat(2, 6.875em);
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 24px;
+  }
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 0px);
+  }
+  .swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, 0px);
+  }
+}
 .img_over:nth-child(1) {
   left: 0;
   top: 0;

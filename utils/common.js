@@ -10,17 +10,11 @@ export async function loadScript(fileLocation) {
 }
 export function addClass({ idContainer, classListChild, classActive }) {
   var menuContainer = document.getElementById(idContainer);
-  var listMenu = menuContainer.getElementsByClassName(classListChild);
+  var listMenu = menuContainer.querySelectorAll(`.${classListChild}`);
   for (var i = 0; i < listMenu.length; i++) {
     listMenu[i].addEventListener("click", function () {
-      let currentActive = document.querySelector(`.${classActive}`);
-      // currentActive.classList.remove(classActive);
-      // this.classList.add(classActive);
-      currentActive.className = currentActive.className.replace(
-        ` ${classActive}`,
-        ""
-      );
-      this.className += ` ${classActive}`;
+      listMenu.forEach((li) => li.classList.remove(classActive));
+      this.classList.add(classActive);
     });
   }
 }

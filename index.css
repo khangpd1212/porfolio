@@ -17,16 +17,6 @@ h3 {
 .container {
   padding: 0px 6.25em;
 }
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 0px 4.25em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0px 2.25em;
-  }
-}
 .icon-center {
   vertical-align: middle;
   margin-right: 10px;
@@ -35,11 +25,7 @@ h3 {
 .container-section {
   padding: 0px 8.75em;
 }
-@media screen and (max-width: 1440px) {
-  .container-section {
-    padding: 0px;
-  }
-}
+
 .heading {
   color: #95dedb;
   font-size: 24px;
@@ -74,4 +60,34 @@ h3 {
 .btn-primary:target {
   color: black;
   background-color: #95dedb;
+}
+@media screen and (max-width: 1440px) {
+  .container-section {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0px 4.25em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0px 2.25em;
+  }
+}
+@media screen and (max-width: 426px) {
+  .container {
+    padding: 0px 0.5em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn-primary {
+    padding: 0.8em 0.6em;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
 }

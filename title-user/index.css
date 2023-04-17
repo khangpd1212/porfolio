@@ -34,3 +34,21 @@
   color: #95dedb;
   animation: move_right 1s ease-out alternate 1;
 }
+@media screen and (max-width: 480px) {
+  .title__user > .title__user--username {
+    font-size: 36px;
+    text-align: center;
+  }
+  .title__user > .title__user--role {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .title__user > .title__user--username {
+    font-size: 32px;
+  }
+  .title__user > .title__user--role {
+    font-size: 20px;
+  }
+}

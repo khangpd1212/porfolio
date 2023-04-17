@@ -77,3 +77,8 @@
     right: 2.6em;
   }
 }
+@media screen and (max-width: 480px) {
+  #navbar {
+    width: 70%;
+  }
+}
