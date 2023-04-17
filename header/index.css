@@ -1,6 +1,18 @@
+@import url("./hamburger.css");
 :root {
   --heightTab: 34px;
   --widthTab: 140px;
+}
+#header {
+  padding: 1.5em 0px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #232323;
+  transition: all 0.3s;
+}
+.block {
+  display: block !important;
 }
 .container-header {
   display: flex;
@@ -12,10 +24,10 @@
   gap: 1.875em;
   font-size: 20px;
 }
-.header-left > .menu-active {
-  background-size: 0 3px, 100% 3px;
+.menu-active {
+  background-size: 0 3px, 100% 3px !important;
 }
-.header-left > li {
+.menu {
   padding: 0.3125em 0px;
   background: linear-gradient(to right, transparent, transparent),
     linear-gradient(to right, #dedb95, #db95de, #95dedb);
@@ -23,7 +35,45 @@
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: all 0.3s;
+  width: min-content;
 }
-.header-left > li:hover {
+.menu:hover {
   background-size: 0 3px, 100% 3px;
+}
+@media screen and (min-width: 769px) {
+  #navbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-header {
+    display: none;
+  }
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    width: 50%;
+    transition: transform 0.5s ease-in-out;
+    background-color: #232323;
+    transform: translateX(-150%);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  }
+  #nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875em;
+    padding: 2em;
+  }
+  .navbar-active {
+    transform: translateX(0) !important;
+  }
+  .btn-cv {
+    position: absolute;
+    bottom: 2.6em;
+    left: 2.6em;
+    right: 2.6em;
+  }
 }

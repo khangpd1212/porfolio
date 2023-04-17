@@ -5,10 +5,10 @@
   display: flex;
   gap: 2.5em;
 }
-#contact .container-contact > .contact-form{
+#contact .container-contact > .contact-form {
   flex: 1;
 }
-#contact .container-contact > .information{
+#contact .container-contact > .information {
   flex: 1;
 }
 #contact h3 {
@@ -63,4 +63,16 @@
 .container-contact .copy-right {
   margin-top: 3.5em;
   font-size: 12px;
+}
+@media screen and (max-width: 800px) {
+  #contact .container-contact {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact .contact-form .form-group-inline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }

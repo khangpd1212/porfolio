@@ -3,17 +3,30 @@ import {
   addClass,
   loadHtml,
   loadScript,
+  visibleNavbar,
 } from "./utils/common.js";
+
+async function loadHamburger() {
+  const elHamburger = document.getElementById("hamburger");
+  elHamburger.innerHTML = await loadHtml("./header/hamburger.html");
+  visibleNavbar();
+}
 
 async function loadHeader() {
   const el = document.getElementById("header");
   el.innerHTML = await loadHtml("./header/index.html");
+  loadHamburger();
+  addBoxShadowHeader(el);
   addClass({
     idContainer: "header-menu",
     classListChild: "menu",
     classActive: "menu-active",
   });
-  addBoxShadowHeader(el);
+  addClass({
+    idContainer: "nav-menu",
+    classListChild: "menu",
+    classActive: "menu-active",
+  });
 }
 async function loadTitleUser() {
   const el = document.getElementById("title-user");

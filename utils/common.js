@@ -13,8 +13,10 @@ export function addClass({ idContainer, classListChild, classActive }) {
   var listMenu = menuContainer.getElementsByClassName(classListChild);
   for (var i = 0; i < listMenu.length; i++) {
     listMenu[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName(classActive);
-      current[0].className = current[0].className.replace(
+      let currentActive = document.querySelector(`.${classActive}`);
+      // currentActive.classList.remove(classActive);
+      // this.classList.add(classActive);
+      currentActive.className = currentActive.className.replace(
         ` ${classActive}`,
         ""
       );
@@ -31,4 +33,30 @@ export function addBoxShadowHeader(element) {
       element.style.boxShadow = "unset";
     }
   });
+}
+
+function toggleNavbar(elNav) {
+  let elLinesHamburger = document.getElementsByClassName("line-hamburger");
+  elLinesHamburger[0].classList.toggle("line-first");
+  elLinesHamburger[1].classList.toggle("line-second");
+  elLinesHamburger[2].classList.toggle("line-third");
+  elNav.classList.toggle("navbar-active");
+}
+export function visibleNavbar() {
+  let elNav = document.getElementById("navbar");
+  let elItemMenu = elNav.getElementsByClassName("menu");
+  let elContainerHamburger = document.getElementById("container-hamburger");
+  elContainerHamburger.addEventListener("click", function () {
+    toggleNavbar(elNav);
+  });
+  // for (let i = 0; i < elItemMenu.length; i++) {
+  //   elItemMenu[i].addEventListener("click", function () {
+  //     toggleNavbar(elNav);
+  //   });
+  // }
+  // document.addEventListener("click", (e) => {
+  //   if (elNav.contains(e.target)) {
+  //     toggleNavbar(elNav);
+  //   }
+  // });
 }

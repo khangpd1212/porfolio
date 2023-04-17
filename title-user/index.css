@@ -18,6 +18,7 @@
 .title__user {
   width: clamp(20em, 100%, 38.9375em);
   margin: 0 auto;
+  margin-top: 4.375em;
   margin-bottom: 4.375em;
 }
 .title__user > .title__user--username {
