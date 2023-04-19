@@ -58,4 +58,5 @@ async function loadContact() {
   loadSkills();
   loadProject();
   loadContact();
+  loadScript("./utils/custom-mouse.js");
 })();

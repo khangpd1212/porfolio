@@ -7,7 +7,7 @@
   padding: 1.5em 0px;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 999;
   background-color: #232323;
   transition: all 0.3s;
 }
@@ -66,6 +66,8 @@
     flex-direction: column;
     gap: 1.875em;
     padding: 2em;
+    overflow: scroll;
+    height: 100%;
   }
   .navbar-active {
     transform: translateX(0) !important;
@@ -80,5 +82,15 @@
 @media screen and (max-width: 480px) {
   #navbar {
     width: 70%;
+  }
+}
+@media screen and (orientation: landscape) and (max-device-height: 385px) {
+  .btn-cv {
+    position: relative;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: 4.6em;
   }
 }

@@ -5,6 +5,7 @@
 @import url("project/index.css");
 @import url("contact/index.css");
 html {
+  -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 }
 body {
@@ -31,6 +32,7 @@ h3 {
   font-size: 24px;
   font-weight: 600;
   margin: 4.25em 0px 1.25em 0px;
+  width: fit-content;
 }
 .mb-10 {
   margin-bottom: 10px;
@@ -61,6 +63,24 @@ h3 {
   color: black;
   background-color: #95dedb;
 }
+
+.cursor {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 350ms ease;
+  transform: translate(-50%, -50%) scale(0.3);
+  z-index: 1000;
+}
+.custom-cursor--hoverable {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 @media screen and (max-width: 1440px) {
   .container-section {
     padding: 0px;

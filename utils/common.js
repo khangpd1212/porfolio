@@ -38,19 +38,8 @@ function toggleNavbar(elNav) {
 }
 export function visibleNavbar() {
   let elNav = document.getElementById("navbar");
-  let elItemMenu = elNav.getElementsByClassName("menu");
   let elContainerHamburger = document.getElementById("container-hamburger");
   elContainerHamburger.addEventListener("click", function () {
     toggleNavbar(elNav);
   });
-  // for (let i = 0; i < elItemMenu.length; i++) {
-  //   elItemMenu[i].addEventListener("click", function () {
-  //     toggleNavbar(elNav);
-  //   });
-  // }
-  // document.addEventListener("click", (e) => {
-  //   if (elNav.contains(e.target)) {
-  //     toggleNavbar(elNav);
-  //   }
-  // });
 }
