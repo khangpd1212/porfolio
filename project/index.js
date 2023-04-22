@@ -7,17 +7,17 @@ const listProject = [
     urlDemo: "https://treeworld.vercel.app",
     urlSourceCode: "https://github.com/khangpd1212/Tree-World",
   },
-  {
-    img: {
-      src: "./assets/images/bg-manager-task.png",
-      alt: "bg-manager-task",
-    },
-    title: "Manager Task Project",
-    subtitle: "Web manager task using ReactJS and Vite",
-    listSkill: ["HTML", "Typescript", "ReactJS", "TailwindCSS", "CSS", "Vite"],
-    urlDemo: "https://khangpd-task-manager.netlify.app",
-    urlSourceCode: "https://github.com/khangpd1212/reactjs-manager-task",
-  },
+//   {
+//     img: {
+//       src: "./assets/images/bg-manager-task.png",
+//       alt: "bg-manager-task",
+//     },
+//     title: "Manager Task Project",
+//     subtitle: "Web manager task using ReactJS and Vite",
+//     listSkill: ["HTML", "Typescript", "ReactJS", "TailwindCSS", "CSS", "Vite"],
+//     urlDemo: "https://khangpd-task-manager.netlify.app",
+//     urlSourceCode: "https://github.com/khangpd1212/reactjs-manager-task",
+//   },
   {
     img: {
       src: "./assets/images/bg-b-cycle.png",
