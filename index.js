@@ -15,8 +15,16 @@ async function loadHamburger() {
 async function loadHeader() {
   const el = document.getElementById("header");
   el.innerHTML = await loadHtml("./header/index.html");
+
   loadHamburger();
   addBoxShadowHeader(el);
+
+  const linkCV = 'https://drive.google.com/file/d/1VAxpK4t0UXS9oGCkrbb71dqgGvP7n4bg/view?usp=share_link';
+  const listElLinkCv = document.getElementsByClassName('link-cv');
+  for (let i = 0; i < listElLinkCv.length; i++) {
+    const element = listElLinkCv[i];
+    element.href = linkCV
+  }
   addClass({
     idContainer: "header-menu",
     classListChild: "menu",
