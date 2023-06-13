@@ -19,7 +19,7 @@ async function loadHeader() {
   loadHamburger();
   addBoxShadowHeader(el);
 
-  const linkCV = 'https://drive.google.com/file/d/1aKt4uFjnGGOGKhyIpgDeTPlBbR2FiV9u/view?usp=sharing';
+  const linkCV = 'https://drive.google.com/file/d/1HV0JNLGg5dr-LKzWzxxOtgKI2DqOf7yJ/view?usp=sharing';
   const listElLinkCv = document.getElementsByClassName('link-cv');
   for (let i = 0; i < listElLinkCv.length; i++) {
     const element = listElLinkCv[i];
