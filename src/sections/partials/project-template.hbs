@@ -1,0 +1,47 @@
+{{#each this}}
+  <div class="swiper-slide">
+    <div class="container-project">
+      <div class="img-over-wrap hoverable">
+        <span class="img_over"></span>
+        <span class="img_over"></span>
+        <span class="img_over"></span>
+        <span class="img_over"></span>
+        <span class="img_over"></span>
+        <span class="img_over"></span>
+        <span class="img_over"></span>
+        <span class="img_over"></span>
+        <span class="img_over"></span>
+        <div class="project-image">
+          <img src={{img.src}} alt={{img.alt}} />
+        </div>
+      </div>
+      <div class="project-right">
+        <h3>{{title}}</h3>
+        <h4>{{subtitle}}</h4>
+        <div class="container-skill-project">
+          {{#each listSkill}}
+            <div class="content-skill">
+              <p class="text">{{this}}</p>
+            </div>
+          {{/each}}
+        </div>
+        <div class="btn-container">
+          <a class="btn-primary btn-demo" target="_blank" href={{urlDemo}}>
+            <ion-icon name="logo-chrome" class="icon-center"></ion-icon>Live
+            Demo
+          </a>
+          <a
+            class="btn-primary btn-source-code"
+            target="_blank"
+            href={{urlSourceCode}}
+          >
+            <ion-icon
+              name="code-slash-outline"
+              class="icon-center"
+            ></ion-icon>Source Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/each}}
