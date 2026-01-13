@@ -16,7 +16,7 @@ __webpack_require__.r(__webpack_exports__);
 
 async function loadHeader() {
   const btnCV = document.querySelectorAll('.cv');
-  btnCV.forEach(value => value.href = 'https://drive.google.com/file/d/1I69XT37gkcmnIZEUkPzgTLCfIz7ei3Wq/view?usp=sharing"');
+  btnCV.forEach(value => value.href = 'https://drive.google.com/file/d/1Ao8BKE6_WlKied8xUO4FVRuswPfA9YcE/view?usp=sharing');
   const el = document.getElementById("header");
   (0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.visibleNavbar)();
   (0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.addBoxShadowHeader)(el);
